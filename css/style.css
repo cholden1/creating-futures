@@ -1,0 +1,238 @@
+/*---------------video template css by mgmilcher----------------*/
+.homepage-hero-module {
+  border-right: none;
+  border-left: none;
+  position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+  display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+  display: block !important;
+}
+.video-container {
+  position: relative;
+  bottom: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+}
+.video-container .poster img {
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+}
+.video-container .filter {
+  z-index: 100;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+.video-container .title-container {
+  z-index: 1000;
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+.video-container .description .inner {
+  font-size: 2rem;
+  width: 45%;
+  margin: 0 auto;
+}
+.video-container .link {
+  position: absolute;
+  bottom: 3em;
+  width: 100%;
+  text-align: center;
+  z-index: 1001;
+  font-size: 2em;
+  color: #fff;
+}
+.video-container .link a {
+  color: #fff;
+}
+.video-container video {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+}
+.video-container video.fillWidth {
+  width: 100%;
+}
+.poster {
+  display: none;
+}
+
+/*----------------custom CSS-----------------*/
+.navbar {
+  background-color: black;
+}
+.navbar li a:after {
+  display:block;
+  content: '';
+  border-bottom: solid 2px white;  
+  transform: scaleX(0.0001);  
+  transition: transform 250ms ease-in-out;
+}
+.navbar li a:hover:after {
+  transform: scaleX(1);
+}
+.navbar img {
+  height: 7rem;
+}
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 7rem;
+  font-weight: 700;
+}
+h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 4rem;
+}
+h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 3rem;
+}
+.title-container {
+  background: rgba(0, 0, 0, 0.5);
+}
+.description p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+.row {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.divider {
+  color: white;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #4b2e83;
+  box-shadow: 0px 10px 8px -8px rgb(68, 68, 68);
+}
+
+.divider h2 {
+  text-align: center;
+}
+.divider p {
+  color: white;
+  text-align: center;
+}
+.col-md-6 img {
+  width: 100%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.col-md-4 img {
+  width: 100%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.col-md-6 h3 {
+  padding-bottom: 1rem
+}
+.col-md-4 h3 {
+  padding-bottom: 1rem
+}
+.cta {
+  text-align: center;
+}
+.btn {
+  background-color: #b7a57a ;
+  color: white;
+  width: 50%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  transition: background-color 0.5s ease-in-out;
+}
+.btn:hover {
+  background-color: #85754D;
+  color: white;
+  font-weight: 700;
+}
+#connect {
+  background-color: #d9d9d9;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+#connect h2 {
+  color: black;
+  text-align: center;
+}
+#connect  p {
+  color: black;
+  text-align: center;
+}
+#resources {
+  background-color: #444444;
+}
+#resources h4 {
+  color: white;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+#resources h4 a {
+  color: white;
+  -webkit-transition: color 1.7s ease;
+  transition: text-decoration 0.7s ease;
+   
+}
+#resources h4 a:hover {
+  color: #b7a57a;
+}
+#resources p {
+  color: white;
+  text-align: center;
+}
+footer {
+  position: relative;
+}
+footer hr {
+  border-color: #d9d9d9;
+  color: #d9d9d9;
+  background-color: #d9d9d9;
+}
+.social {
+  font-size: 3.3rem;
+}
+.social a {
+  color: white
+}
+.social i:hover {
+color: #b7a57a;
+}
+#w-logo {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 15%;
+  
+}
+/*----------------mobile--------------------*/
+@media screen and (max-width:750px){
+  #w-logo {
+    width: 25%;
+  }
+  .divider p {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  footer h4, footer p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .spacer {
+    padding-bottom: 7rem;
+  }
+  .poster {
+    display: block;
+    width: 100%;
+  }
+}
