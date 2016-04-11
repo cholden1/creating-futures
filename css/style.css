@@ -217,6 +217,10 @@ color: #b7a57a;
 }
 /*----------------mobile--------------------*/
 @media screen and (max-width:750px){
+  .video-container .description .inner {
+    width: 75%;
+    margin: 0 auto;
+}
   #w-logo {
     width: 25%;
   }
