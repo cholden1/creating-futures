@@ -7,7 +7,7 @@ $( document ).ready(function() {
     initBannerVideoSize('.video-container .filter');
     initBannerVideoSize('.video-container video');
         
-    $(window).on('resize', function() {
+    $(window).resize(function() {
         scaleVideoContainer();
         scaleBannerVideoSize('.video-container .poster img');
         scaleBannerVideoSize('.video-container .filter');
@@ -40,7 +40,7 @@ function initBannerVideoSize(element){
 
 function scaleBannerVideoSize(element){
 
-    var windowWidth = $(window).width(),
+    var windowWidth = document.documentElement.clientWidth,
         windowHeight = document.documentElement.clientHeight,
         videoWidth,
         videoHeight;

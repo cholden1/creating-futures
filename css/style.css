@@ -23,7 +23,7 @@
 }
 .video-container .poster img {
   width: 100%;
-  bottom: 0;
+  top: 0;
   position: absolute;
 }
 .video-container .filter {
@@ -235,8 +235,7 @@ color: #b7a57a;
   .spacer {
     padding-bottom: 7rem;
   }
-  .poster {
-    display: block;
-    width: 100%;
+  /*.poster {
+    display: block; */
   }
 }
