@@ -21,7 +21,7 @@ $( document ).ready(function() {
 
 function scaleVideoContainer() {
 
-    var height = $(window).height();
+    var height = document.documentElement.clientHeight;
     var unitHeight = parseInt(height) + 'px';
     $('.homepage-hero-module').css('height',unitHeight);
 
@@ -41,7 +41,7 @@ function initBannerVideoSize(element){
 function scaleBannerVideoSize(element){
 
     var windowWidth = $(window).width(),
-        windowHeight = $(window).height(),
+        windowHeight = document.documentElement.clientHeight,
         videoWidth,
         videoHeight;
     
